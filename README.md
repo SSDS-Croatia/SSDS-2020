@@ -7,8 +7,8 @@ Hands-on sessions for [5th International Summer School on Data Science](https://
 ## Hands-on Session materials
 
 * [Day 1 - Fundamentals of Network Science](https://github.com/SSDS-Croatia/SSDS-2020)
-* [Day 2 - Networks in Space and Time]()
-* [Day 3 - Large-scale Graph Mining and Summarization]
-* [Day 4 - Graph Representation Learning]
-* [Day 5 - Intersections of Complexity Science, Network science and Data science]
+* [Day 2 - Networks in Space and Time](https://github.com/SSDS-Croatia/SSDS-2020)
+* [Day 3 - Large-scale Graph Mining and Summarization](https://github.com/SSDS-Croatia/SSDS-2020)
+* [Day 4 - Graph Representation Learning](https://github.com/SSDS-Croatia/SSDS-2020)
+* [Day 5 - Intersections of Complexity Science, Network science and Data science](https://github.com/SSDS-Croatia/SSDS-2020)
 
