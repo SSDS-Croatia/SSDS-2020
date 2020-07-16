@@ -1,6 +1,6 @@
 # SSDS 2020  - [5<sup>th</sup> Int'l Summer School on Data Science](https://sites.google.com/view/ssdatascience2020)
 
-## Day 3 - Networks in Space and Time
+## Day 3 - Intersections between Complexity Science, Network Science and Data Science
 
 On the third day of the school you will learn about....
 
