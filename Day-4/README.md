@@ -1,6 +1,6 @@
 # SSDS 2020  - [5<sup>th</sup> Int'l Summer School on Data Science](https://sites.google.com/view/ssdatascience2020)
 
-## Day 4 - Large-scale Graph Mining and Summarization
+## Day 4 - Large-scale Graph Mining and Summarization ([Danai Koutra](https://web.eecs.umich.edu/~dkoutra/))
 
 TBD: UPDATE AS NEEDED TO GIVE INFO FOR Day-4 materials
 
