@@ -2,8 +2,7 @@
 
 ## Day 1 - Fundamentals of Network Science
 
-On the fifth day of the school you will learn about
-[placeholder]
+On the first day of the school you will learn about....
 
 In the hands-on session you will learn how to use [graph-tool](https://graph-tool.skewed.de/), Python library for efficient statistical analysis of graphs...
 
