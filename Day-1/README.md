@@ -6,9 +6,14 @@ On the fifth day of the school you will learn about fundamentals and recent tren
 as one of the cornerstones for large-scale machine learning and analysis on network-structured data. 
 
 
-### Materials
+### Lecture materials and outline
 
-The **Lectures** subfolder contains materials from presentations. Slides of the lecture can be found here: LINK_TO_LECTURES
+* Graph Convolutional Networks - Spectral Techniques
+* Graph Convolutional Networks - Spatial Techniques (w/ a PyTorch hands-on session included)
+* Benchmarking Graph Neural Networks
+
+
+The **Lectures** subfolder contains materials from presentations. Slides of the lecture can be also found here: LINK_TO_LECTURES
 
 The **Hands-on** subfolder contain materials for PyTorch hands-on session.
 
