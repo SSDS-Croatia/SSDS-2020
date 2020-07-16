@@ -13,7 +13,7 @@ as one of the cornerstones for large-scale machine learning and analysis on netw
 * Benchmarking Graph Neural Networks
 
 
-The **Lectures** subfolder contains materials from presentations. Slides of the lecture can be also found here: LINK_TO_LECTURES
+The **Lecture** subfolder contains materials from presentations. Slides of the lecture can be also found here: LINK_TO_LECTURES
 
 The **Hands-on** subfolder contain materials for PyTorch hands-on session.
 
