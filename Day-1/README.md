@@ -2,6 +2,9 @@
 
 ## Day 1 - Fundamentals of Network Science
 
+On the fifth day of the school you will learn about
+[placeholder]
+
 ### Lecture materials and outline
 
 [placeholder]
