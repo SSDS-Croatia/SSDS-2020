@@ -4,7 +4,7 @@
 
 Materials for [5th International Summer School on Data Science](https://sites.google.com/view/ssdatascience2020) organized by the Center of Research Excellence for Data Science and Advanced Cooperative Systems, [Research Unit for Data Science](https://across-datascience.zci.hr/en/zci), from September 7-11, 2020 in Split, Croatia as a **virtual summer school**.
 
-## Lecture and hands-on session materials
+## Lecture and hands-on session materials [TBD by August 15]
 
 * [Day 1 - Fundamentals of Network Science](https://github.com/SSDS-Croatia/SSDS-2020/tree/master/Day-1)
 * [Day 2 - Networks in Space and Time](https://github.com/SSDS-Croatia/SSDS-2020/tree/master/Day-2)
