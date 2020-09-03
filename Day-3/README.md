@@ -2,15 +2,12 @@
 
 ## Day 3 - Intersections between Complexity Science, Network Science and Data Science
 
-On the third day of the school you will learn applications of complex networks methodologies to data science related problems.
-
-In the hands-on session you will learn how to use graph-tool, Python library for efficient statistical analysis of graphs.
-
+On the third day of the school you will learn practical applications of complex networks methodologies to data science related problems. In the hands-on session you will learn how to use [graph-tool](https://graph-tool.skewed.de/), Python library for efficient statistical analysis of graphs.
 
 ### Lecture materials and outline
 
-
-
+* A Network approach to topic models
+* Hands-on session: The graph-tool Python module for network analysis
 
 The **Lecture** subfolder contains materials from presentations.
 
