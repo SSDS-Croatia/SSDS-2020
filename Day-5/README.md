@@ -13,10 +13,12 @@ as one of the cornerstones for large-scale machine learning and analysis on netw
 
 The **Lecture** subfolder contains materials from presentations.
 
-The **Hands-on** session includes practical demonstration using Google Colaboratory notebook:
+The **Hands-on** session includes practical demonstration using Google Colaboratory notebook: 
+
 * [Lab demo : GatedGCNs with DGL](https://drive.google.com/file/d/1WG5t6X12Z70JPtvA2-2PzdK3TMTQMsvm)
 
 
+---
 
 ### Representing graphs through data: Graph learning and Optimal transport ([Hermina Petric Maretić](https://people.epfl.ch/hermina.petricmaretic/?lang=en))
 
