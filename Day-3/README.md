@@ -25,11 +25,11 @@ The procedure for this is as follows: ...
 
 Complexity science studies systems and problems that are composed of many components that may interact with each other in a dynamic and non-linear way. In this talk, I  will address several research directions and problems that are lying on the interface of complexity and data science. First, I will address two research problems related to the structure of networks: 
 
-(i) How to select the set of nodes in a network that, when removed or (de)activated, can stop the spread of (dis)information, mitigate an epidemic, or disrupt a malicious system by fragmenting it into small components at the minimum overall cost; (
+(i) How to select the set of nodes in a network that, when removed or (de)activated, can stop the spread of (dis)information, mitigate an epidemic, or disrupt a malicious system by fragmenting it into small components at the minimum overall cost
 
-ii) What is the connection between directed graphs and geometry of statistical manifolds? Afterward, I will present two problems related to the dynamics on the complex networks: 
+(ii) What is the connection between directed graphs and geometry of statistical manifolds? Afterward, I will present two problems related to the dynamics on the complex networks 
 
-(iii) How graph geodesics can unify continuous and discrete-time stochastic susceptible-infected-recovered processes on networks?; 
+(iii) How graph geodesics can unify continuous and discrete-time stochastic susceptible-infected-recovered processes on networks?
 
 (iv) Can Neural Networks be used for controlling dynamical processes on complex networks? 
 
