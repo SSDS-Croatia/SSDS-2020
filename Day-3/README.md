@@ -29,7 +29,9 @@ Complexity science studies systems and problems that are composed of many compon
 
 ii) What is the connection between directed graphs and geometry of statistical manifolds? Afterward, I will present two problems related to the dynamics on the complex networks: 
 
-(iii) How graph geodesics can unify continuous and discrete-time stochastic susceptible-infected-recovered processes on networks?; (iv) Can Neural Networks be used for controlling dynamical processes on complex networks? 
+(iii) How graph geodesics can unify continuous and discrete-time stochastic susceptible-infected-recovered processes on networks?; 
+
+(iv) Can Neural Networks be used for controlling dynamical processes on complex networks? 
 
 Finally, several Python notebooks will be given to demonstrate the practical aspects of the discussed topics. 
 
