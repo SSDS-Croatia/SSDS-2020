@@ -90,17 +90,24 @@ https://colab.research.google.com/github/count0/colab-gt/blob/master/colab-gt.ip
 
 ### The interface of Complexity and Data Science ([Nino Antulov-Fantulin](https://www.ninoaf.com/))
 
-Complexity science studies systems and problems that are composed of many components that may interact with each other in a dynamic and non-linear way. In this talk, I  will address several research directions and problems that are lying on the interface of complexity and data science. First, I will address two research problems related to the structure of networks: 
+Complexity science studies systems and problems that are composed of many components that may interact with each other in a dynamic and non-linear way. In this talk, I  will address several research directions and problems that are lying on the interface of complexity and data science. 
+First, I will address two research problems related to the structure of networks: 
+(i) How to select the set of nodes in a network that, when removed or (de)activated, can stop the spread of (dis)information, mitigate an epidemic, or disrupt a malicious system by fragmenting it into small components at the minimum overall cost;
+To solve this optimization problem, I will present a method which is based on the spectral properties of a node-weighted Laplacian operator and combine it with a fine-tuning mechanism related to the weighted vertex cover problem.
+(ii) What is the connection between directed graphs and geometry of statistical manifolds? 
+Here, a novel node embedding method of directed graphs to statistical manifolds is presented, which is based on a global minimization of pairwise relative entropy and graph geodesics in a non-linear way. Each node is encoded with a probability density function over a measurable space.
 
-(i) How to select the set of nodes in a network that, when removed or (de)activated, can stop the spread of (dis)information, mitigate an epidemic, or disrupt a malicious system by fragmenting it into small components at the minimum overall cost
-
-(ii) What is the connection between directed graphs and geometry of statistical manifolds? Afterward, I will present two problems related to the dynamics on the complex networks 
-
+Afterward, I will present two problems related to the dynamics on the complex networks:
 (iii) How graph geodesics can unify continuous and discrete-time stochastic susceptible-infected-recovered processes on networks?
-
+Here, a framework that is able to model continuous, discrete, and hybrid forms of (non-)Markovian susceptible-infected-recovered (SIR) stochastic processes on networks is described.
 (iv) Can Neural Networks be used for controlling dynamical processes on complex networks? 
+Here, a neural-network control (NNC) framework is introduced, which represents dynamical systems by neural ordinary different equations (neural ODEs). We find that NNC can learn control signals that drive networked dynamical systems into desired target states.
 
-Finally, several Python notebooks will be given to demonstrate the practical aspects of the discussed topics. 
+Finally, several Python notebooks (Colaboratory) are given to demonstrate the practical aspects of the discussed topics:
+
+https://colab.research.google.com/drive/1CmSegGOFODjdbMJOcyH69m2tVI9OLWo4?usp=sharing
+
+https://colab.research.google.com/drive/1RI_FuDc76H12BdNc2NEfL51j7cfRXqd7?usp=sharing
 
 **References:**
 * https://www.pnas.org/content/116/14/6554
