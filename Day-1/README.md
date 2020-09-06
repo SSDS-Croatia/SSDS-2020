@@ -2,7 +2,14 @@
 
 ## Day 1 - Fundamentals of Network Science
 
-On the first day of the school you will learn about....
+On the first day of the school you will learn about. 
+
+###Fundamentals of Network Science (Vinko Zlatic)(http://thphys.irb.hr/?show=people&id=zlaticv)
+
+What are Networks and what makes them different from graphs. Where does 
+data science and network research intersect. What are network models, 
+how are they used. What are communities, centralities, motifs, and how we
+use processes on networks to better understand them.
 
 ### Lecture materials and outline
 
