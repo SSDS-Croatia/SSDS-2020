@@ -7,7 +7,7 @@ On the first day of the school you will learn about fundamentals of Networks Sci
 ### Lecture materials and outline
 
 
-#### Introduction to Complex networks (Vinko Zlatic)(http://thphys.irb.hr/?show=people&id=zlaticv)
+#### Introduction to Complex networks ([Vinko Zlatic](http://thphys.irb.hr/?show=people&id=zlaticv))
 
 What are Networks and what makes them different from graphs. Where does data science and network research intersect. What are network models, how are they used. What are communities, centralities, motifs, and how we use processes on networks to better understand them.
 
