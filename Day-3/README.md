@@ -104,9 +104,7 @@ Here, a framework that is able to model continuous, discrete, and hybrid forms o
 Here, a neural-network control (NNC) framework is introduced, which represents dynamical systems by neural ordinary different equations (neural ODEs). We find that NNC can learn control signals that drive networked dynamical systems into desired target states.
 
 Finally, several Python notebooks (Colaboratory) are given to demonstrate the practical aspects of the discussed topics:
-
 * https://colab.research.google.com/drive/1CmSegGOFODjdbMJOcyH69m2tVI9OLWo4?usp=sharing
-
 * https://colab.research.google.com/drive/1RI_FuDc76H12BdNc2NEfL51j7cfRXqd7?usp=sharing
 
 **References:**
