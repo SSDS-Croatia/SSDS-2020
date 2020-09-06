@@ -6,7 +6,7 @@ On the first day of the school you will learn about....
 
 ### Lecture materials and outline
 
-## Statistical inference of large-scale network structures ([Tiago P. Peixoto](https://skewed.de/tiago))
+#### Statistical inference of large-scale network structures ([Tiago P. Peixoto](https://skewed.de/tiago))
 
 Networks form the backbone of a wide variety of complex systems, ranging
 from food webs, gene regulation, social networks, transportation and the
@@ -30,11 +30,11 @@ such as the internet at the autonomous systems level, the global airport
 network, the network of actors and films, social networks, citations among
 websites, co-occurrence of disease-causing genes and others.
 
-# References
+##### References
 
 - Tiago P. Peixoto, "Bayesian stochastic blockmodeling", in Advances in Network Clustering and Blockmodeling, edited by P. Doreian, V. Batagelj, A. Ferligoj (Wiley, New York, 2019]), https://arxiv.org/abs/1705.10225
 
-## Network reconstruction from indirect measurements and dynamics ([Tiago P. Peixoto](https://skewed.de/tiago))
+#### Network reconstruction from indirect measurements and dynamics ([Tiago P. Peixoto](https://skewed.de/tiago))
 
 The observed functional behavior of a wide variety large-scale systems
 is often the result of a network of pairwise interactions between
@@ -62,7 +62,7 @@ observations arising from epidemic models and the Ising model, both on
 synthetic and empirical networks, as well as on data containing only
 functional information.
 
-# References
+##### References
 
 - Tiago P. Peixoto, "Network reconstruction and community detection from dynamics" Phys. Rev. Lett. 123 128301 (2019), https://dx.doi.org/10.1103/PhysRevLett.123.128301, https://arxiv.org/abs/1903.10833
 - Tiago P. Peixoto, "Reconstructing networks with unknown and heterogeneous errors", Phys. Rev. X 8 041011 (2018), https://dx.doi.org/10.1103/PhysRevX.8.041011, https://arxiv.org/abs/1806.07956
