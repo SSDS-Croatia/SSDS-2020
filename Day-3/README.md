@@ -105,9 +105,9 @@ Here, a neural-network control (NNC) framework is introduced, which represents d
 
 Finally, several Python notebooks (Colaboratory) are given to demonstrate the practical aspects of the discussed topics:
 
-https://colab.research.google.com/drive/1CmSegGOFODjdbMJOcyH69m2tVI9OLWo4?usp=sharing
+* https://colab.research.google.com/drive/1CmSegGOFODjdbMJOcyH69m2tVI9OLWo4?usp=sharing
 
-https://colab.research.google.com/drive/1RI_FuDc76H12BdNc2NEfL51j7cfRXqd7?usp=sharing
+* https://colab.research.google.com/drive/1RI_FuDc76H12BdNc2NEfL51j7cfRXqd7?usp=sharing
 
 **References:**
 * https://www.pnas.org/content/116/14/6554
