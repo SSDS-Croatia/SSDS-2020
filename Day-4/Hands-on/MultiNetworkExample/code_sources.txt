@@ -1,0 +1,7 @@
+All method for implementing specific embedding-based graph mining algorithms is included here.  Original source can be found as follows:
+NetMF (proximity-preserving node embedding): https://github.com/xptree/NetMF/
+REGAL/xNetMF: (structural node embedding, graph alignment): https://github.com/GemsLab/REGAL
+RGM (graph features from node emebeddings): https://github.com/GemsLab/RGM
+
+Other packages:
+NumPy, SciPy, Matplotlib, Pandas, NetworkX
