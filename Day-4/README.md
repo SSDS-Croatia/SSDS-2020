@@ -16,9 +16,9 @@ Temporal networks are increasingly used to represent a vast diversity of systems
 
 #### Large-scale Graph Mining and Summarization ([Danai Koutra](https://web.eecs.umich.edu/~dkoutra/))
 
-* Large-scale graph mining: Single and collective network analysis
-* Network Summarization
-* Hands-on session
+* Large-scale graph mining: Network summarization and beyond 
+* Hands-on session: Embedding-based multi-network analysis at scale
+* Hands-on session: Pattern and anomaly mining in large, evolving graphs
 
 The **Lecture** subfolder contains materials from presentations.
 
