@@ -2,7 +2,7 @@
 
 ## Day 4 - Large-scale Graph Mining and Summarization ([Danai Koutra](https://web.eecs.umich.edu/~dkoutra/))
 
-On the fourth day of the school you will learn about methodologies for large-scale graph analytics.
+On the fourth day of the school you will learn about data science methodologies for large-scale graph analytics.
 
 ### Lecture materials and outline
 
@@ -17,6 +17,8 @@ Temporal networks are increasingly used to represent a vast diversity of systems
 ---
 
 #### Large-scale Graph Mining and Summarization ([Danai Koutra](https://web.eecs.umich.edu/~dkoutra/))
+
+- 13:30 - 18:30
 
 * Large-scale graph mining: Single and collective network analysis
 * Network Summarization
