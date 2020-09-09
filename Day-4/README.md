@@ -20,8 +20,11 @@ Temporal networks are increasingly used to represent a vast diversity of systems
 
 * Large-scale graph mining: Single and collective network analysis
 * Network Summarization
+* Hands-on session
 
 The **Lecture** subfolder contains materials from presentations.
+
+The **Hands-on** subfolder contains materials for hands-on examples.
 
 There are two hands-on examples, 
 
