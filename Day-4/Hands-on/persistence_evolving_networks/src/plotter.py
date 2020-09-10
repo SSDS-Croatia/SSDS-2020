@@ -83,14 +83,20 @@ class Plotter:
                transparent=False,
                xticks=None,
                yticks=None,
+               ytick_labels=None,
                xscale=None,
                yscale=None):
         self.plot(title=title, xlabel=xlabel, ylabel=ylabel, xscale=xscale, yscale=yscale, xlim=xlim, ylim=ylim, grid=grid, background=background)
-        scatter_plot = plt.scatter(x, y, color=colors, alpha=alpha, s=size)
+        if linewidth != None:
+            scatter_plot = plt.plot(x, y, '-o', color=colors[0], alpha=alpha, markersize=size, linewidth=linewidth)
+        else:
+            scatter_plot = plt.scatter(x, y, color=colors, alpha=alpha, s=size)
         if xticks != None:
             plt.xticks(xticks)
         if yticks != None:
             plt.yticks(yticks)
+            if ytick_labels != None:
+                plt.yticks(yticks, ytick_labels)
 
         if save_path:
             self.save(save_path, dpi, transparent=transparent)
