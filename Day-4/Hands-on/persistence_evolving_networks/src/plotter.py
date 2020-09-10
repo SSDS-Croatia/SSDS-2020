@@ -30,6 +30,12 @@ class Plotter:
         :ylabel: The ylabel for the plot
         '''
         fig = plt.figure(figsize=size) 
+
+        if xscale:
+            plt.xscale(xscale)
+        if yscale:
+            plt.yscale(yscale)
+
         if xlim:
             plt.xlim(xlim)
         if ylim:
@@ -37,10 +43,6 @@ class Plotter:
         plt.title(title, fontsize=self.fontsize)
         plt.xlabel(xlabel, fontsize=self.fontsize)
         plt.ylabel(ylabel, fontsize=self.fontsize)
-        if xscale:
-            plt.xscale(xscale)
-        if yscale:
-            plt.yscale(yscale)
 
         plt.xticks(fontsize=self.fontsize)
         plt.yticks(fontsize=self.fontsize)
@@ -81,14 +83,20 @@ class Plotter:
                transparent=False,
                xticks=None,
                yticks=None,
+               ytick_labels=None,
                xscale=None,
                yscale=None):
         self.plot(title=title, xlabel=xlabel, ylabel=ylabel, xscale=xscale, yscale=yscale, xlim=xlim, ylim=ylim, grid=grid, background=background)
-        scatter_plot = plt.scatter(x, y, color=colors, alpha=alpha, s=size)
+        if linewidth != None:
+            scatter_plot = plt.plot(x, y, '-o', color=colors[0], alpha=alpha, markersize=size, linewidth=linewidth)
+        else:
+            scatter_plot = plt.scatter(x, y, color=colors, alpha=alpha, s=size)
         if xticks != None:
             plt.xticks(xticks)
         if yticks != None:
             plt.yticks(yticks)
+            if ytick_labels != None:
+                plt.yticks(yticks, ytick_labels)
 
         if save_path:
             self.save(save_path, dpi, transparent=transparent)
@@ -97,60 +105,128 @@ class Plotter:
     def timeline(self,
                  x,
                  t,
-                 start=1,
-                 title='Timeline',
+                 ts,
+                 te,
+                 title='',
                  xlabel='Time',
                  ylabel='',
                  save_path=None,
                  dpi=500,
                  color=None,
                  alpha=1.,
-                 interval=10,
-                 with_dots=False,
-                 top_line=True,
-                 with_last=True,
-                 xlim=None,
-                 xscale=None):
+                 interval='Y',
+                 mute_ticks=False,
+                 marker='line',
+                 xticks_and_labels=None,
+                 yticks=None,
+                 top_line=False,
+                 height=1,
+                 anomaly_scores=None,
+                 no_labels=False,
+                 legend=True,
+                 max_score=None,
+                 tick_length=10,
+                 timeticksize=None,
+                 colors=None,
+                 color_to_label=None,
+                 size=None):
         if color == None:
             color = 'green'
-        if with_dots:
-            x_to_c = defaultdict(int)
-            for _x in x:
-                x_to_c[_x] += 1
-            x = sorted(set(x))
-            m = max(x_to_c.values())
-            size = (t, m)
-        else:
-            size = (15, 1)
+        point_size = size
+        size = (15, height)
 
-        self.plot(title=title, xlabel=xlabel, ylabel=ylabel, xscale=xscale, xlim=xlim, size=size, background='white', grid=False, top_line=top_line)
-        
-        xs = np.arange(start, t + 1)
-        ys = [0] * len(xs)
-        plt.plot(xs, ys, color='black')
+        if interval == 'Y':
+            xtick_gap = 31540000
+        elif interval == 'M':
+            xtick_gap = 2628000
+        elif interval == 'W':
+            xtick_gap = 604800
+        elif interval == 'D':
+            xtick_gap = 86400
 
-        xticks = [1] + list(np.arange(start, t + 1, interval) - 1)[1:]
-        if with_last and xticks[-1] != xs[-1]:
-            xticks.append(xs[-1])
-        plt.xticks(xticks)
+        self.plot(title=title, xlabel=xlabel, ylabel=ylabel, xscale=None, xlim=None, size=size, background='white', grid=False, top_line=top_line)
 
-        y = [0] * len(x)
-        plt.scatter(x, y, marker='|', s=500, color=color)
+        xs = [ts, te]
+        ys = [0, 0]
+        plt.plot(xs, ys, '-', color='black')
 
-        if with_dots:
-            x_dots = list()
-            y_dots = list()
-            for _x in x:
-                for c in range(1, x_to_c[_x] + 1):
-                    x_dots.append(_x)
-                    y_dots.append(c)
-            plt.scatter(x_dots, y_dots, marker='o', s=40, color=color)
+        if max_score != None:
+            plt.plot(xs, [max_score, max_score], '-', color='gray', alpha=0)
 
-        plt.xlabel('Time')
+        xticks = [ts]
+        xticks_labels = ['ts'] if not mute_ticks else ['']
+        i = 0
+        while xticks[-1] + xtick_gap < te:
+            i += 1
+            xticks.append(xticks[-1] + xtick_gap)
+            if xticks[-1] == te:
+                xticks_labels.append('te')
+            else:
+                if mute_ticks:
+                    xticks_labels.append('')
+                else:
+                    xticks_labels.append('{} {}'.format(interval, i))
+        if xticks[-1] < te:
+            xticks.append(te)
+            if mute_ticks:
+                xticks_labels.append('')
+            else:
+                xticks_labels.append('te')
+
+
+        if xticks_and_labels:
+            for tick, lab in zip(*xticks_and_labels):
+                xticks.append(tick)
+                xticks_labels.append(lab)
+
+        plt.xticks(xticks, xticks_labels)
+
+        x = list(filter(lambda it: ts <= it <= te, x))
+
+        if marker == 'line':
+            y = [0] * len(x)
+            if timeticksize != None:
+                plt.plot(x, y, '|', markersize=500, mew=timeticksize, color=color, alpha=alpha)
+            else:
+                plt.scatter(x, y, marker='|', s=500, color=color, alpha=alpha)
+        elif marker == 'dot':
+            y = [0] * len(x)
+            plt.scatter(x, y, marker='o', s=10, color=color, alpha=alpha)
+
+        plt.xlabel(xlabel)
+
+        if anomaly_scores != None:
+            ax = x[-len(anomaly_scores):]
+            ay = anomaly_scores
+            color_to_x = defaultdict(list)
+            color_to_y = defaultdict(list)
+
+            if not color_to_label:
+                color_to_label = dict()
+                for c in set(colors):
+                    color_to_label[c] = c
+
+            for _ax, _ay, _c in zip(ax, ay, colors):
+                color_to_x[_c].append(_ax)
+                color_to_y[_c].append(_ay)
+            for c in set(colors):
+                _ax = color_to_x[c]
+                _ay = color_to_y[c]
+                plt.scatter(_ax, _ay, color=c, alpha=alpha, s=point_size, label=color_to_label[c])
+            plt.plot(ax, ay, '-', color=color, alpha=alpha)
+            if legend:
+                plt.legend(fontsize=self.fontsize)
 
         # remove yticks
         frame1 = plt.gca()
-        frame1.axes.yaxis.set_ticklabels([])
+        frame1.tick_params('x', length=tick_length)
+        frame1.tick_params('y', length=0)
+        if anomaly_scores == None:
+            frame1.axes.yaxis.set_ticklabels([])
+        if yticks != None:
+            frame1.axes.yaxis.set_ticklabels(yticks)
+        if no_labels == True:
+            frame1.axes.xaxis.set_ticklabels([])
         if save_path:
             self.save(save_path, dpi)
         plt.show()
