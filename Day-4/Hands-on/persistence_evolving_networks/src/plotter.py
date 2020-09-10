@@ -30,6 +30,12 @@ class Plotter:
         :ylabel: The ylabel for the plot
         '''
         fig = plt.figure(figsize=size) 
+
+        if xscale:
+            plt.xscale(xscale)
+        if yscale:
+            plt.yscale(yscale)
+
         if xlim:
             plt.xlim(xlim)
         if ylim:
@@ -37,10 +43,6 @@ class Plotter:
         plt.title(title, fontsize=self.fontsize)
         plt.xlabel(xlabel, fontsize=self.fontsize)
         plt.ylabel(ylabel, fontsize=self.fontsize)
-        if xscale:
-            plt.xscale(xscale)
-        if yscale:
-            plt.yscale(yscale)
 
         plt.xticks(fontsize=self.fontsize)
         plt.yticks(fontsize=self.fontsize)
@@ -114,6 +116,7 @@ class Plotter:
                  top_line=False,
                  height=1,
                  anomaly_scores=None,
+                 no_labels=False,
                  legend=True,
                  max_score=None,
                  tick_length=10,
@@ -144,12 +147,6 @@ class Plotter:
         if max_score != None:
             plt.plot(xs, [max_score, max_score], '-', color='gray', alpha=0)
 
-        #if xticks_and_labels:
-        #    xticks = list()
-        #    xtick_labels = list()
-        #    for tick, lab in zip(xticks_and_labels):
-        #        xticks.append(tick)
-        #        xtick_labels.append(lab)
         xticks = [ts]
         xticks_labels = ['ts'] if not mute_ticks else ['']
         i = 0
@@ -222,6 +219,8 @@ class Plotter:
             frame1.axes.yaxis.set_ticklabels([])
         if yticks != None:
             frame1.axes.yaxis.set_ticklabels(yticks)
+        if no_labels == True:
+            frame1.axes.xaxis.set_ticklabels([])
         if save_path:
             self.save(save_path, dpi)
         plt.show()
