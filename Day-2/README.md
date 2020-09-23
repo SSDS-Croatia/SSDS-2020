@@ -8,7 +8,7 @@ In the hands-on session you will learn how to use [pathpy](http://www.pathpy.net
 ### Lecture materials and outline
 
 
-#### [Networks, Time, and Higher-Order Models](https://1drv.ms/b/s!AuvShCfOFfa8ktxfJrM633m0eBKNlg?e=b5Hcb1)([Ingo Scholtes](https://www.ingoscholtes.net/))
+#### [Networks, Time, and Higher-Order Models](https://1drv.ms/b/s!AuvShCfOFfa8ktxfJrM633m0eBKNlg?e=b5Hcb1) ([Ingo Scholtes](https://www.ingoscholtes.net/))
 
 - 08:45 - 10:15
 
