@@ -16,6 +16,9 @@ Network-based data mining techniques such as graph mining, (social) network anal
 
 Such data pose a important challenges for state-of-the-art graph mining and network analysis techniques. Most of those techniques discard information on the microscopic timing and ordering of links, which is, however, the foundation of so-called time-respecting paths or causal paths. Recent works have exposed that the timing and ordering of relations in such data can introduce higher-order, non-dyadic dependencies that are not captured by state-of-the-art graph representations. Addressing this critical issue when analyzing time-series data, this lecture motivates challenges in the modelling and analysis of temporal networks, and shows how we can address them through higher-order models of causal paths.
 
+
+The slides of the lecture are available at the following [link](https://onedrive.live.com/?authkey=%21ACazOt95tHgSjZY&cid=BCF615CE2784D2EB&id=BCF615CE2784D2EB%21306783&parId=root&o=OneUp).
+
 #### Hands-on sessions ([Vincenzo Perri](https://www.ifi.uzh.ch/en/dag/people/perri.html))
 - 10:30 - 12:00  Data science with python and introduction to pathpy 
 - 13:30 - 15:30  Network science and Higher-Order Network Analysis with pathpy 

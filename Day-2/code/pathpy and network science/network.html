@@ -207,8 +207,8 @@ hr.tooltip-hr {
 }
 
 </style>
-<div id="xb0d4e06bcdda4c9b82195fcebfa1dc5e"></div>
-<div id="xf33d53645ee44e869ebfd90852a3b3d9"></div>
+<div id="x73961eddd71643729272c7eaf3fc21f0"></div>
+<div id="xcf5269caa9254f64b2719e651f0c03bf"></div>
 <script charset="utf-8" src="https://d3js.org/d3.v5.min.js"></script>
 
 <script charset="utf-8" src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
@@ -231,7 +231,7 @@ hr.tooltip-hr {
  require(['d3'], function(d3){
    var config = {"width": 800.0, "height": 550.0, "unit": "px", "dpi": 96, "margin": null, "layout": "euclidean", "temporal": false, "coordinates": true, "euclidean": true, "min_max_node_size": null, "min_max_edge_size": null, "keep_aspect_ratio": true, "forceCharge": -20, "forceRepel": -300, "forceAlpha": 0.1, "restartAlpha": 1, "alphaMin": 0.001, "targetAlpha": 0, "chargeDistance": 800, "repelDistance": 200, "velocityDecay": 0.4, "lookoutStrokeWidth": 1, "lookoutOpacity": 0.5, "lookoutWeight": 0.0, "radiusMinSize": 4, "radiusMaxSize": 16, "nodeTransitionDuration": 100, "defaultEdgeWeight": 1, "targetAlphaDragStarted": 0.3, "targetAlphaDragEnd": 0.0, "linkStrengthMin": 0.0, "linkStrengthMax": 0.45, "template": null, "css": null, "backend": ["tikz"], "fileformat": ["tex"], "latex_class_options": "", "interactiv": {"backend": ["d3js"], "fileformat": ["html"]}, "animation": {"enabled": false, "begin": null, "end": null, "steps": 20, "speed": 100, "unit": "seconds"}, "label": {"centered": true, "enabled": true, "color": "white"}, "label_centered": true, "label_enabled": true, "label_color": "white", "curved": true, "directed": true, "widgets": {"tooltip": {"enabled": false, "size": "100px"}, "save": {"title": "Save", "enabled": true, "tooltip": "Save the network as [svg] or [png]."}, "zoom": {"title": "Zoom", "enabled": true, "tooltip": "Zoom-in with [+] <br> zoom-out with [-] <br> or reset zoom with [Reset]. <br> Furthermore, with [Shift+mouse wheel] you can also zoom."}, "filter": {"title": "Filter", "enabled": false, "tooltip": "Filter the nodes base on given groups.", "groups": ["all"]}, "search": {"title": "Search", "enabled": true, "tooltip": "Search for a node in the network."}, "layout": {"title": "Layout", "enabled": true, "tooltip": "Change the layout of the Network. Per default a [Force] directed layout is used. If x and y coordinates are given, an [Coord] layout can be used."}, "animation": {"title": "Animation", "enabled": true, "tooltip": "Play and pause animation of the temproal network."}, "aggregation": {"title": "Aggregation", "enabled": true, "tooltip": "Aggregate time steps.", "past": 2, "future": 2, "aggregation": 1}}}
 
-   var data = {"nodes": [{"uid": "a", "size": 30.0, "color": "orange", "opacity": 0.2, "coordinates": [144.0, 531.0], "id_as_label": true}, {"uid": "b", "size": 10.0, "color": "blue", "opacity": 0.2, "coordinates": [144.0, 19.0], "id_as_label": true}, {"uid": "c", "size": 20.0, "color": "red", "opacity": 0.2, "coordinates": [656.0, 531.0], "id_as_label": true}], "links": [{"uid": "0x245ff0ef6d0", "size": 2.0, "color": "black", "opacity": 1, "source": "a", "target": "b", "directed": true, "curved": 0.5}, {"uid": "0x245ff0ef460", "size": 2.0, "color": "black", "opacity": 1, "source": "b", "target": "c", "directed": true, "curved": 0.5}]}
+   var data = {"nodes": [{"uid": "a", "size": 30.0, "color": "orange", "opacity": 0.2, "coordinates": [144.0, 531.0], "id_as_label": true}, {"uid": "b", "size": 10.0, "color": "blue", "opacity": 0.2, "coordinates": [144.0, 19.0], "id_as_label": true}, {"uid": "c", "size": 20.0, "color": "red", "opacity": 0.2, "coordinates": [656.0, 531.0], "id_as_label": true}], "links": [{"uid": "0x11d06395f10", "size": 2.0, "color": "black", "opacity": 1, "source": "a", "target": "b", "directed": true, "curved": 0.5}, {"uid": "0x11d0629ea60", "size": 2.0, "color": "black", "opacity": 1, "source": "b", "target": "c", "directed": true, "curved": 0.5}]}
 
    function tooltip(tooltipId, width){
      // Local variable to hold tooltip div for
@@ -1302,7 +1302,7 @@ hr.tooltip-hr {
 
 
    var myNetwork = network(config);
-   myNetwork("#xf33d53645ee44e869ebfd90852a3b3d9", data);
+   myNetwork("#xcf5269caa9254f64b2719e651f0c03bf", data);
 
    /* function widgets(container,config,network){ */
 
@@ -1609,7 +1609,7 @@ hr.tooltip-hr {
       }; */
 
 
-   setupMenu("#xb0d4e06bcdda4c9b82195fcebfa1dc5e",config,myNetwork);
+   setupMenu("#x73961eddd71643729272c7eaf3fc21f0",config,myNetwork);
 
 
    function sliderMenu(container,config,network){
@@ -2065,6 +2065,6 @@ hr.tooltip-hr {
    }; // End of sliderMenu
 
    if (config.temporal === true){
-     sliderMenu("#xb0d4e06bcdda4c9b82195fcebfa1dc5e",config,myNetwork);};
+     sliderMenu("#x73961eddd71643729272c7eaf3fc21f0",config,myNetwork);};
  });
 </script>
